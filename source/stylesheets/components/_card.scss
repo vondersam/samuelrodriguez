@@ -1,0 +1,13 @@
+.card {
+  margin: 0.5em;
+  padding: 1em;
+  text-align: center;
+  i {
+    font-size: 3em;
+  }
+}
+
+.card:hover {
+background: $white;
+color: $blue;
+}

@@ -1,0 +1,64 @@
+
+.background-green {
+  background: $green;
+  color: $white;
+  &::selection {
+    background: $red;
+  }
+}
+
+.background-red {
+  background: $red;
+  color: $white;
+  &::selection {
+    background: $blue;
+  }
+}
+
+.background-blue {
+  background: $blue;
+  color: $white;
+  &::selection {
+    background: $red;
+  }
+}
+
+.background-yellow {
+  background: $yellow;
+  color: $black;
+  &::selection {
+    background: $red;
+  }
+}
+
+.background-black {
+  background: $black;
+  color: $white;
+  &::selection {
+    background: $red;
+  }
+}
+
+.background-white {
+  background: $white;
+  color: $black;
+  &::selection {
+    background: $red;
+  }
+}
+
+.in-black {
+  color: $black;
+}
+
+.in-black:hover {
+}
+
+.hover-link {
+  padding: 3px;
+}
+.hover-link:hover {
+  background: $black;
+  color: $white;
+  text-decoration: none;
+}

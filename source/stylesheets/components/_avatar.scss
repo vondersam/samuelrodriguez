@@ -1,0 +1,55 @@
+.img-resize {
+  width: 60%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.carousel {
+  position: absolute;
+  right: -69px;
+  padding-left: 33px;
+}
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-bottom: none;
+}
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.path2 {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: dash 5s alternate 0s infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.path {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: dash 6s alternate 0s infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
