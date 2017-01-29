@@ -1,1 +1,1 @@
-Personal website. http://www.samuelrodriguez.me/
+Personal portfolio website. http://www.samuelrodriguez.me/
