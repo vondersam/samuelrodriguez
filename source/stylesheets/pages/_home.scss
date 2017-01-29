@@ -1,6 +1,11 @@
 .box {
   height: 110vh;
   padding: 3em;
+  overflow: hidden;
+}
+
+.row {
+  margin: 0;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -23,6 +28,3 @@
     font-size: 1.7em;
   }
 }
-// .row-container {
-//   display: relative;
-// }
