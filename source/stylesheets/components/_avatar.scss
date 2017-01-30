@@ -4,6 +4,33 @@
   margin-top: 3%;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 300px) {
+  .img-resize {
+    width: 100%;
+    }
+  }
+
+@media (min-width: 768px) {
+  .img-resize {
+    width: 90%;
+    }
+  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .img-resize {
+    width: 60%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .img-resize {
+    width: 60%;
+  }
+}
+
 .carousel {
   position: absolute;
   right: -69px;

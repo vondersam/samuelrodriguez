@@ -52,7 +52,6 @@
   <body>
 
     <div class="navbar background-red hidden-xs hidden-sm">
-  <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <a href="index.html" class="navbar-item sliding-middle-out">Projects</a>
@@ -66,88 +65,89 @@
         <h1>Samuel Rodríguez</h1>
       </div>
     </div>
-  </div>
 </div>
 
 <div class="navbar background-red hidden-md hidden-lg">
-  <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h1>Samuel Rodríguez</h1>
+        <h2>Samuel Rodríguez</h2>
       </div>
-    <div class="row">
-      <div class="col-xs-12 navbar-container">
-        <a href="index.html" class="navbar-item sliding-middle-out">Projects</a>
-        <a href="skills.html" class="navbar-item sliding-middle-out">Skills</a>
-        <a href="about.html" class="navbar-item sliding-middle-out">About</a>
-        <a href="contact.html" class="navbar-item sliding-middle-out">Contact</a>
+      <div class="row">
+        <div class="col-xs-12 dropdown-arrow">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="menu-items">
+                <a href="index.html" class="navbar-item sliding-middle-out">Projects</a>
+                <a href="skills.html" class="navbar-item sliding-middle-out">Skills</a>
+                <a href="about.html" class="navbar-item sliding-middle-out">About</a>
+                <a href="contact.html" class="navbar-item sliding-middle-out">Contact</a>
+              </div>
+            </div>
+          </div>
+
+          <span style="cursor:pointer" onclick="openNav()">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
       </div>
-    </div>
     </div>
   </div>
 </div>
 
 
     <div class="row">
-  <div class="col-xs-12 box background-blue">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-ruby-plain"></i>
-        <p>Ruby</p>
-        <p></p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-javascript-plain"></i>
-        <p>JavaScript</p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-postgresql-plain"></i>
-        <p>SQL</p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-html5-plain"></i>
-        <p>HTML5</p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-css3-plain"></i>
-        <p>CSS3</p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-bootstrap-plain"></i>
-        <p>Bootstrap</p>
-      </div>
-      </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-git-plain"></i>
-        <p>Git</p>
-      </div>
-      </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-heroku-original"></i>
-        <p>Heroku</p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <i class="devicon-apple-original"></i>
-        <p>Apple</p>
-      </div>
-    </div>
+
+  <div class="col-xs-12 col-sm-6 box-skills background-blue">
+    <i class="devicon-ruby-plain"></i>
+    <h3>Ruby</h3>
+    <p>I use Ruby on Rails for my dynamic web applications and Middleman for static websites.</p>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 box-skills background-yellow">
+    <i class="devicon-javascript-plain"></i>
+    <h3>JavaScript</h3>
+    <p>I mainly use JQuery and React.</p>
+  </div>
+
+  <div class="col-xs-12 col-sm-4 box-skills background-yellow">
+    <i class="devicon-postgresql-plain"></i>
+    <h3>PostgreSQL</h3>
+    <p>Reliable and easy-to-develop complex object-relational databases.</p>
+  </div>
+
+  <div class="col-xs-12 col-sm-4 box-skills background-red">
+    <i class="devicon-html5-plain"></i>
+    <h3>HTML5</h3>
+    <p>I follow the latest conventions of the W3C and use HTML5.</p>
+  </div>
+
+  <div class="col-xs-12 col-sm-4 box-skills background-green">
+    <i class="devicon-css3-plain"></i>
+    <h3>CSS3</h3>
+    <p>I mainly use SASS and SCSS for the most complex dynamic applications.</p>
+  </div>
+
+  <div class="col-xs-12 col-sm-3 box-skills background-green">
+    <i class="devicon-bootstrap-plain"></i>
+    <h3>Bootstrap</h3>
+    <p>With an extensive documentation and a very active community, Bootstrap is one of the best options for responsive design that needs to be implemented quickly.</p>
+  </div>
+  <div class="col-xs-12 col-sm-3 box-skills background-blue">
+    <i class="devicon-git-plain"></i>
+    <h3>Git</h3>
+    <p>For apps built in teams. As online repository, I use GitHub.</p>
+  </div>
+  <div class="col-xs-12 col-sm-3 box-skills background-yellow">
+    <i class="devicon-heroku-original"></i>
+    <h3>Heroku</h3>
+    <p>Heroku offers easy-to-implement deployment when you work with RoR.</p>
+  </div>
+  <div class="col-xs-12 col-sm-3 box-skills background-red">
+    <i class="devicon-apple-original"></i>
+    <h3>Apple</h3>
+    <p>MacBook Pro - OS El Capitan.</p>
   </div>
 </div>
-
 
     <script src="javascripts/all.js"></script>
   </body>

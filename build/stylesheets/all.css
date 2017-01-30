@@ -9953,13 +9953,14 @@ button.close {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0; }
-  /* line 11, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
-  .navbar h1 {
+  margin: 0;
+  width: 100%; }
+  /* line 12, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+  .navbar h1, .navbar h2 {
     text-align: right;
     font-size: 2em; }
 
-/* line 17, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+/* line 18, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
 .navbar-item {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
@@ -9968,18 +9969,18 @@ button.close {
   cursor: pointer;
   padding: 0 20px; }
 
-/* line 23, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+/* line 24, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
 .navbar-item:hover {
   text-decoration: none;
   color: #FFFFFF; }
 
-/* line 28, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+/* line 31, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
 .sliding-middle-out {
   display: inline-block;
   position: relative;
   padding-bottom: 3px; }
 
-/* line 33, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+/* line 36, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
 .sliding-middle-out:after {
   content: '';
   display: block;
@@ -9990,11 +9991,79 @@ button.close {
   -webkit-transition: width .3s ease, background-color .3s ease;
   transition: width .3s ease, background-color .3s ease; }
 
-/* line 42, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+/* line 45, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
 .sliding-middle-out:hover:after {
   width: 100%;
   background: #FFFFFF; }
 
+/* line 51, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.overlay {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #EE5F5B;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+/* line 63, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.overlay-content {
+  position: relative;
+  top: 10%;
+  height: 100%;
+  text-align: center; }
+
+/* line 70, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.overlay a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #FFFFFF;
+  display: block;
+  -webkit-transition: 0.1s;
+  transition: 0.1s; }
+
+/* line 80, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.menu-items {
+  margin-top: 35px; }
+
+/* line 84, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.overlay a:hover, .overlay a:focus {
+  color: #FFFFFF; }
+
+/* line 88, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.overlay .closebtn {
+  position: absolute;
+  top: -6px;
+  right: 18px;
+  font-size: 40px;
+  font-weight: lighter;
+  padding: 20px; }
+
+@media screen and (max-height: 450px) {
+  /* line 98, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+  .overlay a {
+    font-size: 20px; }
+
+  /* line 99, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+/* line 105, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.menu-bars {
+  text-align: center;
+  font-size: 3em; }
+
+/* line 112, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/layout/_navbar.css.scss */
+.dropdown-arrow {
+  text-align: center;
+  font-size: 2em; }
+
+/* Main class */
 /* -------------------------------------
  * Utilities classes
  * These are examples of utilities classes
@@ -10032,13 +10101,32 @@ button.close {
   margin-bottom: 3%;
   margin-top: 3%; }
 
-/* line 7, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 300px) {
+  /* line 9, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+  .img-resize {
+    width: 100%; } }
+@media (min-width: 768px) {
+  /* line 15, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+  .img-resize {
+    width: 90%; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 22, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+  .img-resize {
+    width: 60%; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 29, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+  .img-resize {
+    width: 60%; } }
+/* line 34, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
 .carousel {
   position: absolute;
   right: -69px;
   padding-left: 33px; }
 
-/* line 12, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+/* line 39, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
 .svg-container {
   display: inline-block;
   position: relative;
@@ -10048,14 +10136,14 @@ button.close {
   overflow: hidden;
   margin-bottom: none; }
 
-/* line 21, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+/* line 48, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
 .svg-content {
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0; }
 
-/* line 27, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+/* line 54, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
 .path2 {
   stroke-dasharray: 1400;
   stroke-dashoffset: 1400;
@@ -10073,7 +10161,7 @@ button.close {
     stroke-dashoffset: 1400; }
   to {
     stroke-dashoffset: 0; } }
-/* line 42, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
+/* line 69, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_avatar.scss */
 .path {
   stroke-dasharray: 1400;
   stroke-dashoffset: 1400;
@@ -10086,92 +10174,89 @@ button.close {
   to {
     stroke-dashoffset: 0; } }
 /* line 1, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_card.scss */
-.card {
-  margin: 0.5em;
-  padding: 1em;
-  text-align: center; }
-  /* line 5, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_card.scss */
-  .card i {
-    font-size: 3em; }
+.box-skills {
+  height: 70vh;
+  padding: 3em; }
 
-/* line 10, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_card.scss */
-.card:hover {
-  background: #FFFFFF;
-  color: #00BCD4; }
+/* line 6, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_card.scss */
+.box-skills > i {
+  font-size: 3em; }
 
-/* line 2, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 1, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .background-green {
   background: #4BAF4F;
   color: #FFFFFF; }
-  /* line 5, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+  /* line 4, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
   .background-green::-moz-selection {
     background: #EE5F5B; }
   .background-green::selection {
     background: #EE5F5B; }
 
-/* line 10, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 9, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .background-red {
   background: #EE5F5B;
   color: #FFFFFF; }
-  /* line 13, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+  /* line 12, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
   .background-red::-moz-selection {
     background: #00BCD4; }
   .background-red::selection {
     background: #00BCD4; }
 
-/* line 18, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 17, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .background-blue {
   background: #00BCD4;
   color: #FFFFFF; }
-  /* line 21, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+  /* line 20, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
   .background-blue::-moz-selection {
     background: #EE5F5B; }
   .background-blue::selection {
     background: #EE5F5B; }
 
-/* line 26, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 25, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .background-yellow {
   background: #FFC107;
   color: #111111; }
-  /* line 29, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+  /* line 28, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
   .background-yellow::-moz-selection {
     background: #EE5F5B; }
   .background-yellow::selection {
     background: #EE5F5B; }
 
-/* line 34, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 33, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .background-black {
   background: #111111;
   color: #FFFFFF; }
-  /* line 37, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+  /* line 36, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
   .background-black::-moz-selection {
     background: #EE5F5B; }
   .background-black::selection {
     background: #EE5F5B; }
 
-/* line 42, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 41, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .background-white {
   background: #FFFFFF;
   color: #111111; }
-  /* line 45, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+  /* line 44, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
   .background-white::-moz-selection {
     background: #EE5F5B; }
   .background-white::selection {
     background: #EE5F5B; }
 
-/* line 50, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 49, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .in-black {
   color: #111111; }
 
-/* line 57, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 56, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .hover-link {
   padding: 3px; }
 
-/* line 60, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
+/* line 59, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_colors.scss */
 .hover-link:hover {
-  background: #111111;
+  background-color: #111111;
   color: #FFFFFF;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: background-color 500ms linear;
+  transition: background-color 500ms linear; }
 
 /* line 1, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/components/_form.scss */
 .cont-formo {
@@ -10855,21 +10940,31 @@ button.close {
 /* line 1, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
 .box {
   height: 110vh;
-  padding: 3em; }
+  padding: 3em;
+  overflow: hidden; }
+
+/* line 7, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
+.box-about {
+  padding: 3em;
+  overflow: hidden; }
+
+/* line 11, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
+.row {
+  margin: 0; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 8, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
+  /* line 17, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
   body {
     font-size: 1.5em; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* line 15, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
+  /* line 24, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
   body {
     font-size: 1.6em; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* line 22, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
+  /* line 31, /Users/samuelrodriguezmedina/code/vondersam/samuelrodriguez/source/stylesheets/pages/_home.scss */
   body {
     font-size: 1.7em; } }
 /*

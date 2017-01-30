@@ -52,7 +52,6 @@
   <body>
 
     <div class="navbar background-red hidden-xs hidden-sm">
-  <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <a href="index.html" class="navbar-item sliding-middle-out">Projects</a>
@@ -66,23 +65,31 @@
         <h1>Samuel Rodríguez</h1>
       </div>
     </div>
-  </div>
 </div>
 
 <div class="navbar background-red hidden-md hidden-lg">
-  <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h1>Samuel Rodríguez</h1>
+        <h2>Samuel Rodríguez</h2>
       </div>
-    <div class="row">
-      <div class="col-xs-12 navbar-container">
-        <a href="index.html" class="navbar-item sliding-middle-out">Projects</a>
-        <a href="skills.html" class="navbar-item sliding-middle-out">Skills</a>
-        <a href="about.html" class="navbar-item sliding-middle-out">About</a>
-        <a href="contact.html" class="navbar-item sliding-middle-out">Contact</a>
+      <div class="row">
+        <div class="col-xs-12 dropdown-arrow">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="menu-items">
+                <a href="index.html" class="navbar-item sliding-middle-out">Projects</a>
+                <a href="skills.html" class="navbar-item sliding-middle-out">Skills</a>
+                <a href="about.html" class="navbar-item sliding-middle-out">About</a>
+                <a href="contact.html" class="navbar-item sliding-middle-out">Contact</a>
+              </div>
+            </div>
+          </div>
+
+          <span style="cursor:pointer" onclick="openNav()">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
       </div>
-    </div>
     </div>
   </div>
 </div>
@@ -115,6 +122,30 @@
       </form>
     </div>
 </div>
+
+<!-- <div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+
+    <div class="form-group">
+      <input type="text" required="required"/>
+      <label class="control-label" for="input">Email</label><i class="bar"></i>
+    </div>
+
+    <div class="form-group">
+      <input type="text" required="required"/>
+      <label class="control-label" for="input">Name</label><i class="bar"></i>
+    </div>
+
+    <div class="form-group">
+      <textarea required="required"></textarea>
+      <label class="control-label" for="textarea">Textarea</label><i class="bar"></i>
+    </div>
+
+    <div class="button-container">
+      <button class="button" type="button"><span>Submit</span></button>
+    </div>
+  </div>
+</div> -->
 
     <script src="javascripts/all.js"></script>
   </body>
