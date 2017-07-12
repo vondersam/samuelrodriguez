@@ -73,7 +73,6 @@ configure :build do
 
   activate :minify_html
 
-  activate :directory_indexes
 
 
   # Or use a different image path
