@@ -13,3 +13,6 @@ gem 'middleman-autoprefixer'
 
 gem 'rack-contrib', '~> 1.4'
 gem 'puma'
+
+gem "middleman-minify-html"
+
