@@ -1,1 +1,1 @@
-Personal portfolio website. http://www.samuelrodriguez.me/
+Personal portfolio website. vondersam.github.io/samuelrodriguez
